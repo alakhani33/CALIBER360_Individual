@@ -1272,13 +1272,13 @@ Your leadership journey is uniquely yours — and it doesn’t stop here.
             # st.write(f"PDF File ID: {pdf_drive_id}")
 
             try:
-            csv_drive_id = upload_to_drive(filename, filename, "text/csv", folder_id)
+                csv_drive_id = upload_to_drive(filename, filename, "text/csv", folder_id)
                 st.success(f"✅ CSV uploaded to Drive (File ID: {csv_drive_id})")
             except Exception as e:
                 st.error(f"❌ CSV upload failed: {e}")
 
             try:
-            pdf_drive_id = upload_to_drive(pdf_filename, pdf_filename, "application/pdf", folder_id)
+                pdf_drive_id = upload_to_drive(pdf_filename, pdf_filename, "application/pdf", folder_id)
                 st.success(f"✅ PDF uploaded to Drive (File ID: {pdf_drive_id})")
             except Exception as e:
                 st.error(f"❌ PDF upload failed: {e}")
