@@ -12,8 +12,8 @@ from langchain.schema import HumanMessage
 
 
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 from reportlab.lib.pagesizes import LETTER
